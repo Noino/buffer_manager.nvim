@@ -611,6 +611,7 @@ end
 function M.save_menu_to_file(filename)
 
   update_buffers()
+  update_marks()
   log.trace("save_menu_to_file()")
   if filename == nil or filename == "" then
     filename = vim.fn.input("Enter filename: ")
